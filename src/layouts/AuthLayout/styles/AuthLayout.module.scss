@@ -10,7 +10,7 @@
   header,
   main,
   footer {
-    width: 100vw;
+    width: calc(100vw - 18px);
   }
 
   header {

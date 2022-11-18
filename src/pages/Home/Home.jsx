@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <Slider />
-      <Cards />
+      <Cards title={"Nuevos Lanzamientos"} />
     </div>
   );
 };
