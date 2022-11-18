@@ -1,0 +1,21 @@
+@import "../../../styles/global.module";
+
+.brand {
+  background-color: #fedc3d;
+  width: 30rem;
+  height: $header-height;
+  border-bottom-right-radius: 10rem;
+  margin-bottom: 20rem;
+  filter: drop-shadow(0 0 2rem #fedc3d);
+  h1 {
+    font-size: 8rem;
+    transform: rotate(-10deg);
+    padding-top: 3rem;
+  }
+  .headerLogo {
+    img {
+      display: flex;
+      width: 5rem;
+    }
+  }
+}

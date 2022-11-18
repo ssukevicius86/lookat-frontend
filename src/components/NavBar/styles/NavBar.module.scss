@@ -1,0 +1,25 @@
+.containerNav {
+  display: flex;
+  background-color: #01abaa;
+  width: 80rem;
+  align-items: end;
+  justify-items: end;
+  justify-content: space-around;
+  padding: 2rem;
+  border-top-left-radius: 10rem;
+  border-left: 1rem solid #fedc3d;
+
+  .navEnlace {
+    margin: 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+}
+
+.navEnlace:first-child {
+  filter: drop-shadow(0 0 0.75rem #fedc3d);
+  color: black;
+  text-transform: uppercase;
+}

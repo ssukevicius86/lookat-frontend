@@ -1,0 +1,18 @@
+$primary-color: red;
+$header-height: 20rem;
+$header-color: black;
+$primary-font: "Roboto";
+$footer-height: 4rem;
+$footer-color: grey;
+$main-color: black;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* hack 1rem = 10px */
+  font-family: $primary-font;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
