@@ -1,5 +1,6 @@
 .sliderContainer {
-  background-color: red;
+  background-color: black;
+  filter: drop-shadow(0 0 0.3rem #fedc3d);
 }
 
 .slider {
@@ -9,6 +10,7 @@
   width: 100%;
   border-radius: 10px;
   animation: animate 10s infinite;
+  margin-bottom: 5rem;
 }
 
 @keyframes animate {

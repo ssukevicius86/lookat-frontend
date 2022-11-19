@@ -1,8 +1,10 @@
+@import "../../../styles/global.module";
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  padding: 5rem;
   justify-content: space-between;
   align-content: space-around;
   align-items: start;
@@ -23,5 +25,12 @@
     padding: 1rem;
     box-sizing: border-box;
     text-align: center;
+    filter: drop-shadow(0 0 0.75rem #fedc3d);
+  }
+  h2:hover {
+    transform: scale(1.1);
+    transform: matrix3d(1.1);
+    background-color: $terciary-color;
+    border-radius: 5rem 5rem 5rem 5rem;
   }
 }

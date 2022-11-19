@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./styles/Card.module.scss";
 
-const Card = ({ title, imgSrc }) => {
+const BASE_URL = "https://image.tmdb.org/t/p/w1280/";
+
+const Card = ({ movie }) => {
   return (
-    <div className={styles.card}>
-      <img src={imgSrc} alt={title} title={title} />
+    <div className={styles.card} key={movie.id}>
+      <img
+        src={BASE_URL + movie.poster_path}
+        alt={movie.title}
+        title={movie.title}
+      />
     </div>
   );
 };

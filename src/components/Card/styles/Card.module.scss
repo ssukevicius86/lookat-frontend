@@ -1,7 +1,19 @@
+@import "../../../styles/global.module";
+
 .card {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  height: 20rem;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: drop-shadow(1px 2px 5px rgba(154, 156, 151, 0.924));
+    border-radius: 2rem 0 2rem 0;
   }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transform: matrix3d(1);
 }

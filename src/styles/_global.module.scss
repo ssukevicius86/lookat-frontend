@@ -1,10 +1,13 @@
-$primary-color: red;
+$primary-color: #fedc3d;
+$secundary-color: #01abaa;
+$terciary-color: #fea680;
 $header-height: 20rem;
 $header-color: black;
 $primary-font: "Roboto";
 $footer-height: 4rem;
 $footer-color: grey;
 $main-color: black;
+$scroll-width: 8px;
 
 html {
   box-sizing: border-box;
@@ -15,4 +18,25 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+/* Modifico scroll*/
+
+*::-webkit-scrollbar {
+  width: $scroll-width;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #e8e6f2;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: $secundary-color;
 }
