@@ -1,9 +1,10 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import { Brand, NavBar, UserProfile } from "../../components";
 
 import styles from "./styles/AuthLayout.module.scss";
 
-const AuthLayout = ({ children }) => {
+const AuthLayout = () => {
   return (
     <div className={styles.authlayout}>
       <header>
@@ -13,7 +14,9 @@ const AuthLayout = ({ children }) => {
           <NavBar />
         </div>
       </header>
-      <main>{children}</main>
+      <main>
+        <Outlet />
+      </main>
       <footer> </footer>
     </div>
   );

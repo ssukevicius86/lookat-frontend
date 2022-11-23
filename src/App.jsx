@@ -1,14 +1,7 @@
-import AuthLayout from "./layouts/AuthLayout/AuthLayout";
-import Home from "./pages/Home/Home";
-import { getPopular } from "./services/movies/getPopular";
+import AppRouter from "../routers/AppRouter";
 
 function App() {
-  getPopular();
-  return (
-    <AuthLayout>
-      <Home />
-    </AuthLayout>
-  );
+  return <AppRouter />;
 }
 
 export default App;

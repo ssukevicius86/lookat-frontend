@@ -1,0 +1,32 @@
+.populares {
+  h2 {
+    font-size: 20rem;
+    color: aqua;
+    background-color: #3d8afe;
+  }
+  .peli {
+    display: grid;
+    font-size: 10rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: #3d8afe;
+  }
+  h1 {
+    margin: 0;
+    font-family: "Limelight", cursive;
+    font-size: 4rem;
+    display: flex;
+    background-color: #fedc3d;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem 5rem 0 0;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem #fedc3d);
+  }
+}

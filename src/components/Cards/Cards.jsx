@@ -1,12 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Card from "../Card/Card";
 import styles from "./styles/Cards.module.scss";
 
-const Cards = ({ title, movies }) => {
+const Cards = ({ title, movies, url }) => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.cards}>
-      <h2>{title}</h2>
-      {movies.slice(0, 9).map((movie) => (
+      <h2 onClick={() => navigate(url)}>{title}</h2>
+
+      {movies.slice(0, 5).map((movie) => (
         <Card movie={movie} />
       ))}
     </div>
