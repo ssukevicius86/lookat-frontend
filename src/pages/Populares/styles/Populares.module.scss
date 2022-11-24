@@ -1,12 +1,15 @@
 .populares {
+  .contenedorPelis {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: pelis pelis pelis;
+  }
   h2 {
     font-size: 20rem;
-    color: aqua;
-    background-color: #3d8afe;
   }
   .peli {
-    display: grid;
-    font-size: 10rem;
+    grid-area: center;
+    height: 100%;
     height: 30rem;
     width: 30rem;
     background-color: #3d8afe;

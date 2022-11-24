@@ -10,7 +10,7 @@ const Cards = ({ title, movies, url }) => {
     <div className={styles.cards}>
       <h2 onClick={() => navigate(url)}>{title}</h2>
 
-      {movies.slice(0, 5).map((movie) => (
+      {movies.map((movie) => (
         <Card movie={movie} />
       ))}
     </div>

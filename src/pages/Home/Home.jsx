@@ -19,21 +19,18 @@ const Home = () => {
   }, []);
 
   const getPopularMovies = async () => {
-    const pelis = await getPopular();
+    const pelis = await getPopular(5);
     setPopulares(pelis);
-    console.log(pelis);
   };
 
   const getUpcomingMovies = async () => {
-    const pelis = await getUpcoming();
+    const pelis = await getUpcoming(5);
     setUpcoming(pelis);
-    console.log(pelis);
   };
 
   const getTopRatedMovies = async () => {
-    const pelis = await getTopRated();
+    const pelis = await getTopRated(5);
     setToprated(pelis);
-    console.log(pelis);
   };
 
   return (
