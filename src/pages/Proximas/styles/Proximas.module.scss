@@ -1,3 +1,51 @@
-.proximas{
+.proximas {
+  display: grid;
+  padding: 2rem;
+  grid-template-areas:
+    "h1 h1 h1"
+    "aside cardsProximas cardsProximas"
+    "aside cardsProximas cardsProximas";
 
+  aside {
+    grid-area: aside;
+    margin-top: 5rem;
+    min-height: 20rem;
+    min-width: 30rem;
+    background-color: #3d8afe;
+  }
+  .cardsPopulares {
+    grid-area: cardsProximas;
+  }
+
+  h2 {
+    font-size: 20rem;
+  }
+  h1 {
+    grid-area: h1;
+    margin: 0;
+    font-family: "Limelight", cursive;
+    font-size: 4rem;
+    display: flex;
+    background-color: #fedc3d;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem 5rem 0 0;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem #fedc3d);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .populares {
+    grid-template-areas:
+      "h1"
+      "aside"
+      "cardsPopulares";
+  }
 }

@@ -8,7 +8,7 @@ const Cards = ({ title, movies, url }) => {
 
   return (
     <div className={styles.cards}>
-      <h2 onClick={() => navigate(url)}>{title}</h2>
+      {title !== "" && <h2 onClick={() => navigate(url)}>{title}</h2>}
 
       {movies.map((movie) => (
         <Card movie={movie} />
